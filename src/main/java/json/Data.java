@@ -1,11 +1,14 @@
 package json;
 
+import java.util.List;
+import java.util.Map;
+
 public class Data {
     private String updated;
     private Integer totalItems;
     private Integer startIndex;
     private Integer itemsPerPage;
-    private Items items;
+    private List<Items> items;
 
     public String getUpdated() {
         return updated;
@@ -39,11 +42,11 @@ public class Data {
         this.itemsPerPage = itemsPerPage;
     }
 
-    public Items getItems() {
+    public List<Items> getItems() {
         return items;
     }
 
-    public void setItems(Items items) {
+    public void setItems(List<Items> items) {
         this.items = items;
     }
 }

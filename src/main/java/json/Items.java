@@ -1,6 +1,5 @@
 package json;
 
-import java.util.List;
 import java.util.Map;
 
 public class Items {
@@ -11,7 +10,7 @@ public class Items {
     private String category;
     private String title;
     private String description;
-    private List<String> tags;
+    private String[] tags;
     private Map<String, String> thumbnail;
     private Map<String, String> player;
     private Map<String, String> content;
@@ -81,11 +80,11 @@ public class Items {
         this.description = description;
     }
 
-    public List<String> getTags() {
+    public String[] getTags() {
         return tags;
     }
 
-    public void setTags(List<String> tags) {
+    public void setTags(String[] tags) {
         this.tags = tags;
     }
 
