@@ -25,7 +25,7 @@ public class Util {
         Youtube youtube = objectMapper.readValue(jsonData, Youtube.class);
 
         JSONObject json = new JSONObject(youtube);
-        String xml = XML.toString(json);
+        String xml = XML.toString(json, "youtube");
 
         FileWriter file = new FileWriter(target);
         BufferedWriter buffer = new BufferedWriter(file);
